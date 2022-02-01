@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    body{
+        background-image: url("pw.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+    .d1{
+        font-size: 160px;
+        text-align: center;
+        font-weight: lighter;
+        font-style: italic;
+    }
+
+    .d2{
+        width: 500px;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 50px;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    #pw{
+        width: 300px;
+        height: 40px;
+    }
+
+    #go{
+        width: 50px;
+        height: 40px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="d1"> Are You</div>
+    <div class="d1"> Princy? </div>
+   
+   <div class="d2">
+    <form class="c" action="password.html" method= >
+        <center><h1 id="h1">Enter Password</h1></center>
+        <input type="password" name="" placeholder="Enter Your Password Here" id="pw">
+        <input type="button" value="Go!" id="go" onclick="validate()">
+    </form>
+   </div>
+
+   <script>
+      function validate(){
+           var pass=document.getElementById("pw").value;
+           if(pass=="princy@gupta"){
+             location.href="https://kj1611.github.io/main/";
+             return false;
+           }
+
+           else{
+               alert("login failed");
+           }
+       }
+   </script>
+</body>
+</html>
